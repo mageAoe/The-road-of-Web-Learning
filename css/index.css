@@ -1,0 +1,248 @@
+html {
+    font-size: 62.5% !important;    /* 取默认字体的百分比 */ 
+}
+dl, ol, ul{
+    list-style: none;
+}
+@media (min-width: 992px){
+    html {
+        font-size: 62.5%;
+    }
+}
+@media (min-width: 768px){
+    html {
+        font-size: 59%;
+    }
+}
+@media (min-width: 576px){
+    html {
+        font-size: 56%
+    }
+}
+body{
+    overflow-x: hidden;
+    letter-spacing: 0.4px;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.leftCol{
+    left: 0;
+    top:0;
+}
+
+
+.leftCol header{
+    height: 80px;
+}
+
+.leftCol header ul a{
+    font-size: 1.6rem;
+}
+.leftCol .icon-menu{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #858585;
+}
+
+
+.login{
+    height: calc(100vh - 80px);
+}
+.login h1{
+    font-size: 2.6rem;
+}
+.login a{
+    font-size: 1.6rem;
+    color: #00A862;
+}
+.login .icon-denglu{
+    font-size: 2rem;
+}
+.login .regsit{
+    border-radius: 48px;
+    padding: 2px 12px;
+}
+
+.left_menu ul li hr{
+    background: rgba(0, 0, 0, 0.12);
+    border: 0;
+    height: 1px;
+    font-weight:lighter;
+}
+.left_menu{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 2000;
+    transition: 0.3s;
+}
+.left_menu.hide{
+    opacity: 0;
+    transform: scale(2);
+    z-index: -1;
+}
+.left_menu.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.left_menu ul li{
+    font-size: 1.8rem;
+
+}
+.left_menu div a{
+    font-size: 1.6rem;
+    color: #00A862;
+}
+
+.left_menu .regsit{
+    border-radius: 48px;
+    padding: 2px 12px;
+}
+.left_menu footer a{
+    color: rgba(0, 0, 0, 0.38);
+}
+.left_menu footer{
+    color: rgba(0, 0, 0, 0.12);
+    margin: 0 24px 24px 84px;
+}
+
+@media (max-width:991.98px){
+    .login{
+		height: auto;
+	}
+    .leftCol{
+		position: relative!important;
+	}
+}
+
+/* @media(min-width: 641px) and (max-width: 1200px){
+    .leftCol{
+        position: fixed!important;
+        width: 100%;
+    }
+    .login{
+        height: auto;
+    }
+    .cantainer-fluid{
+        width: 100vw;
+    }
+} */
+/* 右边 */
+
+#control .icon-left,#control .icon-right{
+    font-size: 6rem;
+}
+
+.three div img{
+    box-shadow: 0 0px 1px rgba(0 0 0 / 12%);
+    border-radius: 3px;
+    transition: .3s;
+}
+.three div img:hover{
+    box-shadow: 0 1px 1px 1px rgba(0 0 0 / 12%) ;
+    transform: translateY(-5px);
+}
+.right_content div:nth-of-type(3) h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.right_content div:nth-of-type(3) div p a{
+    color: #C2A661;
+}
+.right_content div:nth-of-type(3) div p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: #00A862;
+}
+
+.right_content div:nth-of-type(3) div a{
+    border-radius: 48px;
+    padding: 6px 18px;
+}
+
+.right_content div:nth-of-type(4) h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.right_content div:nth-of-type(4) p{
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.right_content div:nth-of-type(4) div li p{
+    font-size: 1.4rem;
+}
+.right_content div:nth-of-type(4) div li a img{
+    width: 40%;
+    margin-top: -24px;
+}
+.right_content div:nth-of-type(4) div li a h4{
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.right_content div:nth-of-type(4) div li a p:last-child{
+    color: #C2A661;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+.right_content div:nth-of-type(4) div li a{
+    box-shadow: 0 1px 1px 1px rgb(0 0 0 / 12%);
+    position: relative;
+    transition: .5s;
+}
+.right_content div:nth-of-type(4) div li a:hover{
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.22);
+    transform: translateY(-5px);
+}
+
+.teah h4{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.teah p{
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.teah ul{
+    width: 1216px;
+}
+
+.teah ul li{
+    width: 288px;
+    box-shadow: 0 0px 1px rgba(0 0 0 / 12%);
+    transition: .3s;
+}
+.teah ul li:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0px 4px 1px rgba(0 0 0 / 12%);
+}
+.teah ul li span{
+    top: 5px;
+    font-size: 1.4rem;
+    padding: 4px 12px;
+    background:#C2A661 ;
+}
+.teah ul li h5{
+    font-size:1.7rem;
+}
+
+footer span{
+    font-size: 1.5rem;
+}
+
+footer img{
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 3rem;
+}
